@@ -13,6 +13,10 @@
     {
       "src": "app.js",
       "use": "@vercel/static"
+    },
+    {
+      "src": "timeline.png",
+      "use": "@vercel/static"
     }
   ],
   "routes": [
@@ -23,6 +27,10 @@
     {
       "src": "/app.js",
       "dest": "/app.js"
+    },
+    {
+      "src": "/timeline.png",
+      "dest": "/timeline.png"
     },
     {
       "src": "/(.*)",
