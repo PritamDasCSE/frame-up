@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FrameUp - Learn Creative Arts & Unlock Brand Deals</title>
+  
+  <!-- FontAwesome for Premium Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-size/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Backup Icon link just in case -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background Glowing Blobs -->
+  <div class="bg-blobs">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <a href="#" class="nav-brand" data-view="home" onclick="navigateTo('home'); return false;">
+      <i class="fa-solid fa-clapperboard"></i> <span>FrameUp</span>
+    </a>
+    <nav>
+      <ul class="nav-links">
+        <li><a class="nav-link active" data-view="home">Home</a></li>
+        <li><a class="nav-link" data-view="dashboard">My Learning</a></li>
+        <li><a class="nav-link" data-view="jobs">Brands & Gigs</a></li>
+      </ul>
+    </nav>
+    <div class="nav-actions">
+      <div class="profile-widget">
+        <div class="avatar" id="hdr-avatar">LP</div>
+        <span class="badge-level" id="hdr-level">LVL 1</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Level-Up Toast Notifications -->
+  <div class="level-up-toast" id="level-up-toast">
+    Level Up! 
+    <span>Unlocked Level 2 and brand matches!</span>
+  </div>
+
+  <!-- SECTION 1: LANDING PAGE -->
+  <main class="page-section active" id="landing-section">
+    <section class="hero">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <i class="fa-solid fa-bolt"></i> Learn &amp; Earn Marketplace
+        </div>
+        <h1>
+          Master Video Skills.
+          <span>Get Hired by Brands.</span>
+        </h1>
+        <p>
+          FrameUp brings media educators, creative learners, and top global brands onto a single platform. Develop professional-grade videography and editing skills, get direct mentorship, and unlock paid campaigns as you level up.
+        </p>
+        <div class="hero-buttons">
+          <button class="btn btn-primary" onclick="navigateTo('dashboard')">
+            Get Started <i class="fa-solid fa-arrow-right"></i>
+          </button>
+          <button class="btn btn-secondary" onclick="document.getElementById('features-sec').scrollIntoView({behavior: 'smooth'})">
+            How it Works
+          </button>
+        </div>
+      </div>
+      
+      <div class="hero-visual">
+        <div class="visual-box">
+          <img src="https://images.unsplash.com/photo-1536240478700-b869070f9279?auto=format&fit=crop&w=800&q=80" alt="Creative Video Production">
+          
+          <div class="visual-badge visual-badge-1">
+            <i class="fa-solid fa-video" style="color: var(--color-secondary);"></i>
+            <div>
+              <p style="font-size:0.75rem; font-weight:700; color:white; margin:0;">Videography Basics</p>
+              <span style="font-size:0.65rem; color:var(--text-muted);">Completed Milestone 2</span>
+            </div>
+          </div>
+
+          <div class="visual-badge visual-badge-2">
+            <i class="fa-solid fa-trophy" style="color: var(--color-accent);"></i>
+            <div>
+              <p style="font-size:0.75rem; font-weight:700; color:white; margin:0;">Level 2 Unlocked</p>
+              <span style="font-size:0.65rem; color:var(--text-muted);">Matching Gymshark Gigs</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features-section" id="features-sec">
+      <div class="section-header">
+        <h2>Learn, Level Up, Launch Careers</h2>
+        <p>A loop built for creators. No certificates that collect dust — just verified skills and real-world income.</p>
+      </div>
+
+      <div class="features-grid">
+        <!-- Feature 1 -->
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fa-solid fa-chalkboard-user"></i>
+          </div>
+          <h3>Educator-Guided Courses</h3>
+          <p>Get structured step-by-step training from seasoned directors and professional editors. Receive real feedback on your submitted footage artifacts.</p>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fa-solid fa-chart-line"></i>
+          </div>
+          <h3>Gamified Skill Ranking</h3>
+          <p>Earn experience points (XP) for finishing practical assignments. Level up from Apprentice to Professional, showing brands your verified capabilities.</p>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fa-solid fa-handshake"></i>
+          </div>
+          <h3>Locked Brand Marketplace</h3>
+          <p>The USP of FrameUp: high-paying gigs from top sponsors (Sony, DJI, Red Bull) are locked behind levels. Complete work to open your gateway to brands.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- SECTION 2: LEARNER DASHBOARD -->
+  <main class="page-section" id="learner-dashboard">
+    <div class="portal-layout">
+      <!-- Sidebar Profile -->
+      <aside class="portal-sidebar">
+        <div class="user-summary">
+          <div class="avatar-large" id="sidebar-avatar">LP</div>
+          <h3 id="sidebar-name">Liam Parker</h3>
+          <p id="sidebar-level-name">Learner Media Pro</p>
+          
+          <div class="xp-bar-container">
+            <div class="xp-bar-fill" id="sidebar-xp-bar"></div>
+          </div>
+          <div class="xp-text" id="sidebar-xp-text">450 / 1000 XP</div>
+        </div>
+
+        <ul class="sidebar-menu">
+          <li><a class="sidebar-item active" onclick="navigateTo('dashboard')"><i class="fa-solid fa-graduation-cap"></i> Dynamic Courses</a></li>
+          <li><a class="sidebar-item" onclick="navigateTo('jobs')"><i class="fa-solid fa-briefcase"></i> Brand Jobs</a></li>
+          <li><a class="sidebar-item" onclick="navigateTo('workspace')"><i class="fa-solid fa-display"></i> Project Workspace</a></li>
+        </ul>
+      </aside>
+
+      <!-- Content panel -->
+      <div class="portal-content">
+        <div>
+          <h2 style="font-size:2rem; margin-bottom:0.5rem;">Select Your Course Path</h2>
+          <p style="color:var(--text-muted);">Work through structured projects to earn XP and level up your Creator rank.</p>
+        </div>
+        <div class="grid-cards" id="courses-grid">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- SECTION 3: LEARNER WORKSPACE -->
+  <main class="page-section" id="learner-workspace">
+    <div class="portal-layout">
+      <!-- Sidebar -->
+      <aside class="portal-sidebar">
+        <ul class="sidebar-menu">
+          <li><a class="sidebar-item" onclick="navigateTo('dashboard')"><i class="fa-solid fa-chevron-left"></i> Back to Courses</a></li>
+          <li><a class="sidebar-item active"><i class="fa-solid fa-display"></i> Lecture &amp; Project</a></li>
+        </ul>
+      </aside>
+
+      <!-- Workspace Area -->
+      <div class="portal-content">
+        <div>
+          <h2 id="ws-title" style="font-size:2rem; margin-bottom:0.5rem;">Cinematic Storytelling &amp; Camera Basics</h2>
+          <p id="ws-desc" style="color:var(--text-muted);">Master composition, camera movement, and lighting setups to captivate audiences.</p>
+        </div>
+
+        <div class="workspace-layout">
+          <!-- Video Lecture Player -->
+          <div class="video-player-container">
+            <div class="video-mock">
+              <img src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?auto=format&fit=crop&w=800&q=80" alt="Video cover" style="position:absolute; width:100%; height:100%; object-fit:cover; opacity:0.3; pointer-events:none;">
+              <div class="video-play-btn" id="video-play-btn">
+                <i class="fa-solid fa-play"></i>
+              </div>
+              <div class="video-progress-bar" id="video-progress"></div>
+            </div>
+            <div style="padding: 1.5rem; border-top: 1px solid var(--border-light);">
+              <h3 style="font-size: 1.15rem; margin-bottom:0.5rem;">Lecture #3: Mastering Keylights &amp; Dynamic Shadows</h3>
+              <p style="font-size: 0.85rem; color:var(--text-muted); margin:0;">In this segment, Sarah Jenkins outlines how to position key and fill lights at 45-degree angles to generate standard dramatic portrait framing.</p>
+            </div>
+          </div>
+
+          <!-- Assignment Tasks / Dropbox -->
+          <div class="workspace-tasks">
+            <h3>Lesson Milestones</h3>
+            <ul class="task-list" id="ws-tasks">
+              <!-- Rendered by JS -->
+            </ul>
+
+            <div class="submission-box" id="ws-upload-btn">
+              <i class="fa-solid fa-cloud-arrow-up"></i>
+              <h4>Upload Project Artifact</h4>
+              <p>Post your output video link for educator feedback and grade.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- SECTION 4: JOBS & BRANDS BOARD -->
+  <main class="page-section" id="jobs-section">
+    <div class="market-header">
+      <div>
+        <h2>Verified Brand Matchmaker</h2>
+        <p>Unlock professional commissions, gear sponsorships, and campaign editing deals as you level up your creator rank.</p>
+      </div>
+    </div>
+
+    <!-- Core Grid Area -->
+    <div style="position: relative;">
+      <!-- Glassmorphic locked overlay -->
+      <div class="market-locked-overlay" id="market-locked-overlay">
+        <div class="lock-container">
+          <div class="lock-icon-wrapper">
+            <div class="lock-icon-glow"></div>
+            <div class="lock-icon">
+              <i class="fa-solid fa-lock"></i>
+            </div>
+          </div>
+          <h3>Brand Opportunities Locked</h3>
+          <p>Complete your current courses, obtain educator approval, and level up to unlock entry to global campaigns.</p>
+          <div class="lock-requirement">
+            <i class="fa-solid fa-bolt"></i> Unlocks at <span id="lock-level-indicator">Level 2</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Job Cards Container -->
+      <div class="market-grid" id="market-grid">
+        <!-- Rendered by JS -->
+      </div>
+    </div>
+  </main>
+
+  <!-- SECTION 5: EDUCATOR DASHBOARD -->
+  <main class="page-section" id="educator-dashboard">
+    <div class="portal-layout">
+      <!-- Sidebar -->
+      <aside class="portal-sidebar">
+        <div class="user-summary">
+          <div class="avatar-large" style="background: linear-gradient(135deg, var(--color-primary), var(--color-accent));">DF</div>
+          <h3>Dr. Alistair Finch</h3>
+          <p>Head Media Professor</p>
+          
+          <div class="xp-bar-container">
+            <div class="xp-bar-fill" style="width: 100%; background: var(--color-accent);"></div>
+          </div>
+          <div class="xp-text">Educator Mode Active</div>
+        </div>
+
+        <ul class="sidebar-menu">
+          <li><a class="sidebar-item active"><i class="fa-solid fa-list-check"></i> Grading Queue</a></li>
+          <li><a class="sidebar-item" onclick="alert('Demo: Course builder tools interface is currently mock-only.')"><i class="fa-solid fa-plus"></i> Add New Syllabus</a></li>
+        </ul>
+      </aside>
+
+      <!-- Content -->
+      <div class="portal-content">
+        <div>
+          <h2 style="font-size:2rem; margin-bottom:0.5rem;">Review &amp; Assessment Center</h2>
+          <p style="color:var(--text-muted);">Assess creative assignments uploaded by student learners. Assign grades to reward XP and unlock their job match profiles.</p>
+        </div>
+
+        <div class="grading-queue" id="grading-queue">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2026 FrameUp Academy Inc. Empowering creative professionals with education and careers.</p>
+  </footer>
+
+  <!-- DYNAMIC SIMULATOR FLOATING PANEL -->
+  <div class="simulator-panel">
+    <div class="sim-label">
+      <i class="fa-solid fa-sliders"></i>
+      <span>DEMO CONTROL PANEL</span>
+    </div>
+    
+    <div class="sim-controls">
+      <!-- Switch Role -->
+      <div style="display:flex; align-items:center; gap:0.5rem;">
+        <span style="color:var(--text-muted); font-size:0.75rem;">Role:</span>
+        <button class="sim-btn active" id="sim-role-learner">Learner</button>
+        <button class="sim-btn" id="sim-role-educator">Educator</button>
+      </div>
+
+      <!-- Set Level -->
+      <div style="display:flex; align-items:center; gap:0.5rem; border-left:1px solid var(--border-light); padding-left:1rem;">
+        <span style="color:var(--text-muted); font-size:0.75rem;">Set Learner Level:</span>
+        <button class="sim-btn active" id="sim-level-1">Level 1</button>
+        <button class="sim-btn" id="sim-level-2">Level 2</button>
+        <button class="sim-btn" id="sim-level-3">Level 3</button>
+      </div>
+
+      <!-- XP Simulation -->
+      <div style="border-left:1px solid var(--border-light); padding-left:1rem;">
+        <button class="sim-btn" id="sim-add-xp" style="background: hsla(145, 80%, 50%, 0.15); border-color: var(--color-accent); color: var(--color-accent);">
+          <i class="fa-solid fa-plus"></i> Simulate +200 XP
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL WINDOW SYSTEM (APPLICATION / SUBMISSION FORMS) -->
+  <div class="modal-backdrop" id="modal-backdrop">
+    <div class="modal-window">
+      <button class="modal-close" id="modal-close"><i class="fa-solid fa-xmark"></i></button>
+      <h3 id="modal-title">Submit Course Assignment</h3>
+      <p id="modal-subtitle">Review your details before sending to verified coordinators.</p>
+      
+      <!-- Input container -->
+      <div id="modal-form-content">
+        <!-- Rendered dynamically -->
+      </div>
+
+      <div style="display:flex; gap:1rem; margin-top:2rem;">
+        <button class="btn btn-secondary" onclick="closeModal()" style="flex:1;">Cancel</button>
+        <button class="btn btn-primary" id="modal-submit-btn" style="flex:1;">Submit</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Core JavaScript -->
+  <script src="app.js"></script>
+</body>
+</html>
