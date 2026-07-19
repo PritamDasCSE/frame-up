@@ -6,14 +6,14 @@ A gamified learning platform where creators master video skills and get hired by
 
 ## ✨ The Vision
 
-FrameUp bridges the gap between creative education and real-world opportunities. Unlike traditional learning platforms that end with certificates, FrameUp creates a continuous loop where **learning leads directly to earning**. [1](#0-0) 
+FrameUp bridges the gap between creative education and real-world opportunities. Unlike traditional learning platforms that end with certificates, FrameUp creates a continuous loop where **learning leads directly to earning**. 
 
 ## 🎯 What Makes FrameUp Different
 
 ### The Learn-to-Earn Ecosystem
-- **Educator-Guided Courses**: Structured training from seasoned directors and professional editors with real feedback on submitted footage [2](#0-1) 
-- **Gamified Skill Ranking**: Earn XP for practical assignments, leveling up from Apprentice to Professional [3](#0-2) 
-- **Locked Brand Marketplace**: High-paying gigs from top sponsors (Sony, DJI, Red Bull) are gated behind skill levels [4](#0-3) 
+- **Educator-Guided Courses**: Structured training from seasoned directors and professional editors with real feedback on submitted footage 
+- **Gamified Skill Ranking**: Earn XP for practical assignments, leveling up from Apprentice to Professional 
+- **Locked Brand Marketplace**: High-paying gigs from top sponsors (Sony, DJI, Red Bull) are gated behind skill levels 
 
 ## 🚀 User Journey
 
@@ -36,7 +36,7 @@ Creators earn XP through:
 - Submitting project artifacts
 - Receiving educator grades
 
-The XP bar visually tracks progress toward the next level unlock [5](#0-4) .
+The XP bar visually tracks progress toward the next level unlock 
 
 ### Level-Based Progression
 - **Level 1 (Apprentice)**: Access to foundational courses
@@ -48,8 +48,8 @@ The XP bar visually tracks progress toward the next level unlock [5](#0-4) .
 ### Smart Gating System
 The marketplace uses a two-layer security system to ensure quality:
 
-1. **Global Market Lock**: Level 1 users see an overlay preventing access to brand deals [6](#0-5) 
-2. **Individual Job Locking**: Each gig has specific level requirements, showing "Locked (Level X)" for inaccessible opportunities [7](#0-6) 
+1. **Global Market Lock**: Level 1 users see an overlay preventing access to brand deals 
+2. **Individual Job Locking**: Each gig has specific level requirements, showing "Locked (Level X)" for inaccessible opportunities 
 
 ### Job Application Flow
 When creators unlock a gig, they can:
@@ -61,14 +61,14 @@ When creators unlock a gig, they can:
 ## 🎨 Creative Features
 
 ### Immersive Learning Environment
-- **Video Lecture Player**: Professional video interface with progress tracking [8](#0-7) 
-- **Project Workspace**: Dedicated area for lesson milestones and artifact submission [9](#0-8) 
-- **Visual Badges**: Real-time achievement displays showing completed milestones [10](#0-9) 
+- **Video Lecture Player**: Professional video interface with progress tracking 
+- **Project Workspace**: Dedicated area for lesson milestones and artifact submission 
+- **Visual Badges**: Real-time achievement displays showing completed milestones 
 
 ### Dynamic UI Components
-- **Level-Up Toast Notifications**: Celebratory animations when creators unlock new levels [11](#0-10) 
-- **XP Progress Bars**: Visual representation of skill advancement [5](#0-4) 
-- **Job Cards**: Rich display of brand opportunities with tags and budget info [12](#0-11) 
+- **Level-Up Toast Notifications**: Celebratory animations when creators unlock new levels 
+- **XP Progress Bars**: Visual representation of skill advancement  
+- **Job Cards**: Rich display of brand opportunities with tags and budget info 
 
 ## 👥 Three-Sided Platform
 
@@ -79,7 +79,7 @@ When creators unlock a gig, they can:
 - Direct brand access
 
 ### For Educators
-- Dedicated grading dashboard [13](#0-12) 
+- Dedicated grading dashboard 
 - Submission review queue
 - XP assignment capabilities
 - Course building tools
