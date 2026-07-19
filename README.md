@@ -1,5 +1,3 @@
-I'll create a creative README for FrameUp that focuses on the platform's story, features, and user experience rather than technical implementation details.
-
 ---
 
 # 🎬 FrameUp - Learn Creative Arts & Unlock Brand Deals
