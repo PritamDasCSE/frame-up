@@ -112,6 +112,5 @@ When creators unlock a gig, they can:
 
 This creative README focuses on the user experience and unique value propositions of FrameUp rather than technical implementation. The platform's core innovation is combining education with a marketplace, using gamification as the bridge between learning and earning. The two-layer gating system ensures both quality control and motivation for creators to continuously improve their skills.
 
-Wiki pages you might want to explore:
-- [Brand Jobs Marketplace (PritamDasCSE/frame-up)](/wiki/PritamDasCSE/frame-up#3.3)
+
 
